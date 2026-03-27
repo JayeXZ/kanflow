@@ -84,7 +84,7 @@ git commit -m "feat(module-1): complete HTML structure tasks"
 git push
 ```
 
-Paste your GitHub repo URL here: ________________________________
+Paste your GitHub repo URL here: https://github.com/JayeXZ/kanflow
 
 ---
 
