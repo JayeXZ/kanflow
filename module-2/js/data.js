@@ -17,6 +17,7 @@ const columns = [
   { id: "inprogress", title: "In Progress", dot: "dot-inprogress" },
   { id: "review",     title: "Review",      dot: "dot-review"     },
   { id: "done",       title: "Done",        dot: "dot-done"       },
+  { id: "publish",    title: "Publish",     dot: "dot-publish"    },
 ];
 
 // CARDS
@@ -29,8 +30,11 @@ const columns = [
 const cards = [
   { id: 1, title: "Research event-driven patterns",  column: "todo",       tag: "Research", done: false },
   { id: 2, title: "Set up project folder structure", column: "todo",       tag: "Setup",    done: false },
-  { id: 3, title: "Write HTML skeleton",             column: "todo",       tag: "HTML",     done: false },
+  { id: 3, title: "Write HTML skeleton",             column: "inprogress", tag: "HTML",     done: false },
   { id: 4, title: "Style the board layout with CSS", column: "inprogress", tag: "CSS",      done: false },
   { id: 5, title: "Link JS files to index.html",     column: "inprogress", tag: "JS",       done: false },
   { id: 6, title: "Plan Kanban board modules",       column: "done",       tag: "Planning", done: true  },
+  { id: 7, title: "Observe after results",           column: "review",     tag: "Feedback", done: false  },
+  { id: 8, title: "Release it for public use",       column: "publish",    tag: "Distribute",done: false  },
+  
 ];
