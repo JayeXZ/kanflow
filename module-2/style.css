@@ -1,5 +1,5 @@
 /* =============================================
-   KANFLOW — MODULE 1 STARTER CSS
+   KANFLOW - MODULE 2 STARTER CSS
    ============================================= */
 
 :root {
@@ -9,13 +9,15 @@
   --border:         #2e2e3a;
   --text:           #e8e8f0;
   --text-muted:     #7070a0;
-  --accent:         #db4824;   /* ← Try changing this color! */
+  --accent:         #c8f135;
   --col-todo:       #5b8cff;
   --col-inprogress: #ff9f43;
+  --col-review:     #a29bfe;
   --col-done:       #26de81;
   --tag-blue:       rgba(91,140,255,0.15);
   --tag-green:      rgba(38,222,129,0.15);
   --tag-yellow:     rgba(255,159,67,0.15);
+  --tag-purple:     rgba(162,155,254,0.15);
   --font-display:   'Syne', sans-serif;
   --font-mono:      'DM Mono', monospace;
   --radius-md:      12px;
@@ -52,10 +54,10 @@ body {
 }
 .header-inner { width: 100%; display: flex; align-items: center; }
 .logo         { display: flex; align-items: center; gap: 0.5rem; }
-.logo-icon    { font-size: 1.4rem; color: var(--accent); }
+.logo-icon    { font-size: 1.2rem; font-weight: 800; color: var(--accent); font-family: var(--font-mono); }
 .logo h1      { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em; }
 
-/* BOARD — Flexbox places columns side by side */
+/* BOARD */
 .board {
   display: flex;
   flex-direction: row;
@@ -88,6 +90,7 @@ body {
 .column-dot     { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 .dot-todo       { background: var(--col-todo); }
 .dot-inprogress { background: var(--col-inprogress); }
+.dot-review     { background: var(--col-review); }
 .dot-done       { background: var(--col-done); }
 .column-title {
   font-size: 0.85rem; font-weight: 700;
@@ -135,13 +138,12 @@ body {
   border-radius: 6px; letter-spacing: 0.04em;
 }
 .tag-blue   { background: var(--tag-blue);   color: #5b8cff; }
-.tag-green  { background: var(--tag-green);  color: #26de81;   }
+.tag-green  { background: var(--tag-green);  color: #26de81; }
 .tag-yellow { background: var(--tag-yellow); color: #ff9f43; }
+.tag-purple { background: var(--tag-purple); color: #a29bfe; }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .board  { flex-direction: column; padding: 1rem; }
   .column { min-width: unset; max-width: unset; width: 100%; }
 }
-.dot-review {
-background: #a29bfe; }
